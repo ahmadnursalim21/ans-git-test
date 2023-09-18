@@ -1,1 +1,1 @@
-cosole.log(`helo my name is ahmad nur salim`);
+// alert(`hello my name is ahmad nur salim`);
