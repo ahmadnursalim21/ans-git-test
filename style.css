@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -24,11 +25,60 @@ li {
 a {
   text-decoration: none;
   font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
 a:hover {
   color: rgb(214, 214, 214);
   transition: all 0.2s;
+}
+
+/* bagian article */
+
+article {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: rgb(159, 85, 228);
+  padding: 80px 0;
+}
+
+img {
+  width: 700px;
+}
+
+.bg {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.bg h1 {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.description {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  article {
+    grid-template-columns: auto;
+  }
+  img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  article {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  article {
+    padding: 60px 0;
+  }
+  .bg h1 {
+    padding: 0;
+  }
 }
