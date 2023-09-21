@@ -82,3 +82,40 @@ img {
     padding: 0;
   }
 }
+
+/* part main & card my project */
+
+main {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  background-color: rgb(159, 85, 228);
+}
+.card {
+  width: auto;
+  border-radius: 15px;
+  background-color: blueviolet;
+  padding: 15px;
+}
+
+.computer-programming {
+  width: 300px;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 1080px) {
+  main {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 420px) {
+  main {
+    grid-template-columns: auto;
+  }
+}
+@media only screen and (max-width: 720px) {
+  main {
+    grid-template-columns: auto;
+  }
+}
